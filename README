@@ -1,0 +1,18 @@
+Data and code for the paper "Data-Driven Robust Optimization using Unsupervised Deep Learning" by Marc Goerigk and Jannis Kurtz
+
+Structure:
+- 2d, 20d, path: Folders for each of three experiments
+- in each of these folders, there are four sub-folders:
+-- data: test and training data
+-- kernel: trained kernel parameters
+-- nn: trained nn parameters
+-- solutions: output of optimization
+
+- code: there are four sub-folders:
+-- generator: a python file used to generate random data
+-- solver: optimization code, takes trained parameters as input
+-- train_kernel: code to train kernel
+-- train_nn: code to train nn in combination with the Deep SVDD code from
+https://github.com/lukasruff/Deep-SVDD-PyTorch
+
+- scripts: shell scripts used to run experiments, which in particular give parameter choices
